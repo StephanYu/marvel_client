@@ -3,11 +3,12 @@
 
   angular
     .module('app.core')
-    .factory('marvelApiService', marvelApiService);
+    .factory('MarvelApiService', MarvelApiService);
 
-  marvelApiService.$inject = [];
+  MarvelApiService.$inject = [];
   
-  function marvelApiService() {
+  function MarvelApiService() {
+    
     var service = {
       getComics: getComics,
       searchCharacters: searchCharacters    

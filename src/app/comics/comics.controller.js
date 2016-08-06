@@ -5,16 +5,13 @@
     .module('app.comics')
     .controller('ComicsController', ComicsController);
 
-    ComicsController.$inject = [];
+    ComicsController.$inject = ['MarvelApiService'];
 
-    function ComicsController() {
+    function ComicsController(MarvelApiService) {
       
       var vm = this;
       
-      vm.comics = getComics();
+      vm.comics = MarvelApiService.getComics();
       
-      ///////////////////////////////
-
-      function getComics();
     }
 })();
