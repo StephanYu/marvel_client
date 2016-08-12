@@ -11,7 +11,7 @@
     
     var service = {
       getComics: getComics,
-      searchCharacters: searchCharacters    
+      searchComicsBy: searchComicsBy    
     };
 
     return service;
@@ -22,7 +22,7 @@
       
     }
 
-    function searchCharacters() {
+    function searchComicsBy() {
       
     }
   }

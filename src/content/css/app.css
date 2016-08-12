@@ -1,4 +1,10 @@
 body {
   padding-top: 80px;
-  background-color: 
+  background-color: #f0141e;
+  /*transparency*/
+}
+
+.center {
+  text-align: center;
+  margin: 0, auto;
 }
