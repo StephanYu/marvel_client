@@ -7,9 +7,9 @@
       'ngRoute',
 
       // Custom modules
+      'app.comics',
       'app.core',
-      'app.layout',
-      'app.comics'
+      'app.layout'
     ])
     .config(configFunction);
 
