@@ -15,10 +15,11 @@
       };
     }
 
-    NavbarController.$inject = [];
-    function NavbarController() {
+    NavbarController.$inject = ["MarvelApiService"];
+    function NavbarController(MarvelApiService) {
       var vm = this;
 
+      vm.searchComicsBy = MarvelApiService.searchComicsBy;
       
     }
 

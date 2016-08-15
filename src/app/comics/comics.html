@@ -11,7 +11,9 @@
     </div>
     <div class="comic-catalog">
         <!-- iterate over comics and show thumbnail images -->
-        <div ng-repeat="comic in comics"></div>
+        <div ng-repeat="comic in comics">
+            <img src="comic.images[0]" alt="a sample image"/>
+        </div>
     </div>
 </div>
 
