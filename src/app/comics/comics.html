@@ -1,37 +1,69 @@
-<div class="container">
-    <div class="comic-details">
-        <div class="comic-image">
+<div class="comic-details">
+    <div class="container"> 
+        <div class="col-md-6 comic-image">
             <!-- show large comic image  -->
             <img src="../content/images/spiderman-image_2.jpg" alt="main comic image">
         </div>
-        <div class="description">
-            <h3>Comic Title</h3>
-            <p>Comic Description</p>
+        <div class="col-md-6 description">
+            <div class="comic-title">
+                <h3>The Amazing Spider-Man</h3>
+            </div>
+            <div class="comic-description">
+                <h4>Description</h4>
+                <p>Slow-carb heirloom cliche, kitsch celiac direct trade iPhone hoodie keytar leggings typewriter cronut. Food truck DIY put a bird on it, selfies kitsch photo booth taxidermy dreamcatcher meditation austin thundercats try-hard distillery. Lomo VHS gochujang migas, cronut listicle keytar try-hard gastropub messenger bag knausgaard photo booth meggings hoodie. Fixie health goth locavore, chartreuse gluten-free gochujang thundercats.</p>
+                <div class="voting-container">
+                    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+                </div>
+            </div>
         </div>
     </div>
+</div>
+<div class="container">
     <div class="comic-catalog">
         <!-- iterate over comics and show thumbnail images -->
-        <div ng-repeat="comic in comics">
-            <img src="comic.images[0]" alt="a sample image"/>
+        <div class="comic-thumbnail row">
+            <div class="col-md-3">
+                <img src="../content/images/portrait_incredible.jpg" class="border" width="216" height="324" border="0" title="Awesome Thumbnail" alt="a sample image"/>
+            </div>
+            <div class="col-md-3">
+                <img src="../content/images/portrait_incredible.jpg" class="border" width="216" height="324" border="0" title="Awesome Thumbnail" alt="a sample image"/>
+            </div>
+            <div class="col-md-3">
+                <img src="../content/images/portrait_incredible.jpg" class="border" width="216" height="324" border="0" title="Awesome Thumbnail" alt="a sample image"/>
+            </div>
+            <div class="col-md-3">
+                <img src="../content/images/portrait_incredible.jpg" class="border" width="216" height="324" border="0" title="Awesome Thumbnail" alt="a sample image"/>
+            </div>
+        </div>
+        <div class="comic-thumbnail row">
+            <div class="col-md-3">
+                <img src="../content/images/portrait_incredible.jpg" class="border" width="216" height="324" border="0" title="Awesome Thumbnail" alt="a sample image"/>
+            </div>
+            <div class="col-md-3">
+                <img src="../content/images/portrait_incredible.jpg" class="border" width="216" height="324" border="0" title="Awesome Thumbnail" alt="a sample image"/>
+            </div>
+            <div class="col-md-3">
+                <img src="../content/images/portrait_incredible.jpg" class="border" width="216" height="324" border="0" title="Awesome Thumbnail" alt="a sample image"/>
+            </div>
+            <div class="col-md-3">
+                <img src="../content/images/portrait_incredible.jpg" class="border" width="216" height="324" border="0" title="Awesome Thumbnail" alt="a sample image"/>
+            </div>
         </div>
     </div>
 </div>
 
-<ul id="galleries">
+<!-- <ul id="galleries">
     <li>
         <img src="../content/images/portrait_incredible.jpg"  class="border" width="216" height="324" border="0" title="Awesome Thumbnail" />
-        <p>Awesome Thumbnail</p>
     </li>
     <li>
         <img src="../content/images/portrait_incredible.jpg"  class="border" width="216" height="324" border="0" title="Awesome Thumbnail" />
-        <p>Awesome Thumbnail</p>
     </li>
     <li>
         <img src="../content/images/portrait_incredible.jpg"  class="border" width="216" height="324" border="0" title="Awesome Thumbnail" />
-        <p>Awesome Thumbnail</p>
     </li>
     <li>
         <img src="../content/images/portrait_incredible.jpg"  class="border" width="216" height="324" border="0" title="Awesome Thumbnail" />
-        <p>Awesome Thumbnail</p>
     </li>
-</ul>
+</ul> -->

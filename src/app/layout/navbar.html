@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
@@ -11,9 +11,9 @@
 
         <div class="collapse navbar-collapse center" id="#navbar">
             <img src="../content/images/marvel_logo.png" alt="main comic image">
-            <form class="navbar-form navbar-left">
+            <form class="navbar-form">
                 <div class="form-group">
-                    <input type="text" ng-model="vm.search" class="form-control" placeholder="Search for marvel characters or teams...">
+                    <input type="text" ng-model="vm.search" id="navbar-input" class="form-control" placeholder="Search for marvel characters or teams...">
                 </div>
                 <button type="submit" ng-click="vm.searchComicsBy(vm.search)" class="btn btn-default">Submit</button>
             </form>
