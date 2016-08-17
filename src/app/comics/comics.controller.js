@@ -11,7 +11,7 @@
       
       var vm = this;
       
-      vm.comics = MarvelApiService.getComics();
+      vm.voteComic = MarvelApiService.voteComic();
       
     }
 })();
