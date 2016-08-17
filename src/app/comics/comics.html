@@ -22,6 +22,12 @@
 <div class="container">
     <div class="comic-catalog">
         <!-- iterate over comics and show thumbnail images -->
+        {{vm.comics}}
+        <!-- <div ng-show="vm.comics">
+            <ul ng-repeat="comic in vm.comics">
+                <li>{{ comic }}</li>
+            </ul>
+        </div> -->
         <div class="comic-thumbnail row">
             <div class="col-md-3">
                 <img src="../content/images/portrait_incredible.jpg" class="border" width="216" height="324" border="0" title="Awesome Thumbnail" alt="a sample image"/>

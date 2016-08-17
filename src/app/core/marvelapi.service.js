@@ -10,8 +10,9 @@
   function MarvelApiService($http) {
     
     var service = {
-      getComics: getComics,
-      searchComicsBy: searchComicsBy    
+      getComics:      getComics,
+      searchComicsBy: searchComicsBy,
+      voteComic:      voteComic    
     };
 
     return service;
@@ -20,18 +21,26 @@
 
     function getComics() {
       // let's test the spotify API
-      $http("https://api.spotify.com/v1/albums/4aawyAB9vmqN3uQ7FjRGTy").then(function(response){
-        return response.data;
+      $http.get("https://api.spotify.com/v1/artists?ids=0oSGxfWSnnOXhD2fKuz2Gy,3dBVyJ7JuOMt4GE9607Qin").then(function(response){
+        return comics = response.data.artists;
       }, function(response){
         // console.log("Something went wrong");
       });
     }
 
     function searchComicsBy(query) {
-      $http("/someUrl").then(function(response){
-
+      $http.post("/someUrl").then(function(response){
+        return response.data;
       }, function(response){
+        // console.log("Something went wrong");
+      });
+    }
 
+    function voteComic(direction) {
+      $http.post("/someUrl/q=" + direction).then(function(response){
+        return response.data;
+      }), function(response){
+        // console.log("Something went wrong");
       });
     }
   }
