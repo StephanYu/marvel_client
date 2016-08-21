@@ -16,7 +16,7 @@
           myService: function($q, MarvelApiService){
             var defer = $q.defer();
             var comics = MarvelApiService.getComics();
-            defer.resolve(comics),
+            defer.resolve(comics);
 
             return defer.promise;
           }
